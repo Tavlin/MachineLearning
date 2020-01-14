@@ -1,0 +1,77 @@
+\documentclass[]{scrartcl}
+%\documentclass[11pt]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{fancyref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{amsmath}
+%\usepackage[onehalfspacing]{setspace}
+
+%\usepackage{subfigure}
+\usepackage{subcaption}  
+\usepackage[abs]{overpic}
+\usepackage{graphicx}
+\usepackage{pdfpages} 
+\usepackage[ngerman]{datetime}
+%\usepackage[ngerman]{babel}
+\usepackage{grffile}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	
+	\begin{figure*}[t]
+		\centering
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=.9\textwidth]{predictive_distribution_s=0.1.png} 
+			
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{\textwidth}  
+			\centering 
+			\includegraphics[width=.9\textwidth]{predictive_distribution_s=0.2.png}
+			
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{\textwidth}  
+			\centering 
+			\includegraphics[width=.9\textwidth]{predictive_distribution_s=0.3.png}
+			
+		\end{subfigure}
+		\caption{Plots of the predictive distribution corresponding to exercise 1.}
+		\label{fig:predictive_dist}
+	\end{figure*}
+	
+	\begin{figure*}[t]
+		\centering
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=.9\textwidth]{predictive_distribution__samples_s=0.1.png} 
+			
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{\textwidth}  
+			\centering 
+			\includegraphics[width=.9\textwidth]{predictive_distribution__samples_s=0.2.png}
+			
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{\textwidth}  
+			\centering 
+			\includegraphics[width=.9\textwidth]{predictive_distribution__samples_s=0.3.png}
+			
+		\end{subfigure}
+		\caption{Plots of $y(x,\vec{w})$ using samples from the predictive distributions shown in figure \ref{fig:predictive_dist}, corresponding to  exercise 2.}
+		\label{fig:samples}
+	\end{figure*}
+	
+\end{document}
