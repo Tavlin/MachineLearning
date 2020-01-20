@@ -1,0 +1,46 @@
+\documentclass[]{scrartcl}
+%\documentclass[11pt]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{fancyref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{amsmath}
+%\usepackage[onehalfspacing]{setspace}
+
+%\usepackage{subfigure}
+\usepackage{subcaption}  
+\usepackage[abs]{overpic}
+\usepackage{graphicx}
+\usepackage{pdfpages} 
+\usepackage[ngerman]{datetime}
+%\usepackage[ngerman]{babel}
+\usepackage{grffile}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\begin{document}
+	
+	\begin{figure*}[t]
+		\centering
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\includegraphics[width=.9\textwidth]{one_versus_rest.png} 			
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{\textwidth}  
+			\centering 
+			\includegraphics[width=.9\textwidth]{multinomial.png}		
+		\end{subfigure}
+		\caption[]{Three-class classification of the Iris data set with one-versus-the-rest classification (upper) and multinomial logistic regression (lower).}
+	\end{figure*}
+	
+\end{document}
