@@ -1,2 +1,2 @@
 # MachineLearning
-Code I wrote wit Alike for the lecture machine learning
+Code I wrote wit Alike for the lecture Machine Learning
