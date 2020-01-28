@@ -7,19 +7,10 @@ import numpy as np
 import math
 import copy
 
-def sigmoid(a):
-
-    a = np.array(a)
-    return 1./ (1. + np.exp(-a))
 
 def sigmoid_1d(a):
 
     return 1./ (1. + math.exp(-a))
-
-def tanh(a):
-
-    a = np.array(a)
-    return np.append(np.tanh(a), 1)
 
 class NeuralNet:
 
@@ -28,12 +19,7 @@ class NeuralNet:
         [n_units_input, n_units_input, ... , n_units_output]
     """
 
-    def __init__(self, nodes,  activation_functions = [tanh, sigmoid]):
-
-        # self.net = []
-        self.input_nodes = nodes[0]+1
-
-        self.funcs = activation_functions
+    def __init__(self, nodes):
 
         self.net = [None] * len(nodes)
         for i in range(0, len(nodes)):
@@ -47,7 +33,7 @@ class NeuralNet:
 
     def train(self, training_data, labels, alpha = 0.005):
 
-        if len(training_data[0]) != self.input_nodes - 1:
+        if len(training_data[0]) != nodes[0]:
             print("dimension of data points doesnt match the initialised net!!")
             return
 
