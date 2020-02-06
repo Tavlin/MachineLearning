@@ -1,0 +1,105 @@
+\documentclass[]{scrartcl}
+%\documentclass[11pt]{article} 
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm,bindingoffset=0mm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{fancyref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{amsmath}
+%\usepackage[onehalfspacing]{setspace}
+
+%\usepackage{subfigure}
+\usepackage{subcaption}  
+\usepackage[abs]{overpic}
+\usepackage{graphicx}
+\usepackage{pdfpages} 
+\usepackage[ngerman]{datetime}
+\usepackage[ngerman]{babel}
+\usepackage{grffile}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\title{Analysemethoden in der Hochenergiephysik II: Übungsblatt 5}
+\author{Kristina Schmitt}
+
+\begin{document}	
+	
+	\maketitle
+	
+	\section*{Aufgabe 1}
+	
+	\textit{Warum sind die meisten Final-State-Teilchen Photonen?}\\
+	--
+	
+	
+	\textit{Rapiditätsverteilungen}\\
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.95\linewidth]{rapidity.png}
+		\caption[]{Rapiditätsverteilung aller produzierter Teilchen und von Myonen in 10.000 Events}
+		\label{fig:rap}
+	\end{figure}
+
+	\textit{Warum ist das Rapiditätsspektrum der Myonen schmäler?}\\
+	--
+
+	\newpage
+	
+	\section*{Aufgabe 2}
+	
+	\textit{Impulse der Jets und der Teilchen, jeweils auf zwei Raumdimesionen projeziert (links und rechts) für verschiedene Rapiditätscuts}\\
+	
+	\begin{figure*}[h]
+		\centering
+		\begin{subfigure}[b]{0.7\textwidth}
+			\centering
+			\includegraphics[width=0.7\textwidth]{jets_rap_low.png} 
+			
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.7\textwidth}  
+			\centering 
+			\includegraphics[width=0.7\textwidth]{jets_default.png}
+			
+		\end{subfigure}
+		\begin{subfigure}[b]{0.7\textwidth}  
+			\centering 
+			\includegraphics[width=0.7\textwidth]{jets_rap_high.png}
+			
+		\end{subfigure}
+		\caption{Impulse der Jets und der Teilchen, jeweils auf zwei Raumdimensionen projiziert (links und rechts) für verschiedene Rapiditätscuts, von oben nach unten aufsteigend.}
+		\label{fig:momenta}
+	\end{figure*}
+
+	Je höher der Rapiditätscut, desto mehr Teilchen werden zu einem Jet zusammengefasst. ich schätze, dass sich der Rapiditätscut auf die maximal mögliche räumliche Ausdehnung eines Jets bezieht.\\
+	
+	\newpage
+	
+	\textit{Random Number Seed = 0 (time), jeweils 100 Ereignisse generiert.} In Tabelle \ref{tab:num} ist für je 100 Ereignisse die Anzahl an Ereignissen mit mindestens 3 Jets eingetragen. Der Mittelwert ergibt sich zu 24,1. \\
+	
+	\begin{table}[h]
+		\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+		\hline 
+		22 & 26 & 19 & 17 & 18 & 34 & 27 & 27 & 23 & 25 \\ 
+		\hline 
+		21 & 26 & 23 & 22 & 26 & 22 & 26 & 26 & 26 & 26 \\ 
+		\hline 
+	\end{tabular} 
+	\caption{Anzahl Ereignisse mit mehr als 3 Jets aus jeweils 100 Ereignissen.}
+	\label{tab:num}
+	\end{table}
+	
+	
+\end{document}
